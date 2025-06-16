@@ -1,0 +1,98 @@
+.icon {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    padding: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: transparent;
+    border: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.icon-btn {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    padding: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: lightgrey;
+    border: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.icon-btn:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+.icon-games {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.icon:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.icon-overlay::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(255, 255, 255, 0.15); /* light overlay */
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.icon:hover .icon-overlay::after {
+    opacity: 1;
+}
+
+.icon-overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.icon-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.icon-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+    pointer-events: none;
+}
+.icon-text
+{
+    text-align: match-parent;
+    padding: 125px;
+}
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    color: black;
+    background-color: black;
+    border-radius: 10px;
+    opacity: 1;
+}
